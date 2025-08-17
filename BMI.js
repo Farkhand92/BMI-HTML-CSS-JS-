@@ -5,10 +5,6 @@ const height = document.querySelector("#height");
 const bMi=document.querySelector(".guageValue");
 const guageMeter =document.querySelector(".guageMeter");
 const calcBtn = document.querySelector("#calcBtn");
-const loader = document.querySelector("#loader");
-const formBack = document.querySelector("#form");
-const form = document.querySelector("form");
-const fBtn = document.querySelector("#fBtn");
 let dispNav = "hidden"; 
 
 let navFunc=()=>{
@@ -96,19 +92,6 @@ navLinks.forEach(link => {
 });
 
 
-window.addEventListener("load",()=>
-{ 
-   loader.style.display="none";
-   formBack.style.display="block";
-   document.body.style.overflow = 'hidden';
- });
 
-fBtn.addEventListener("click",()=>{
- form.addEventListener("submit",(event)=>{
-    event.preventDefault();
-    formBack.style.display="none";
-    document.body.style.overflow = 'auto'; 
-});
-});
 
 
