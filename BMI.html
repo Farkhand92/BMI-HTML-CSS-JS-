@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="description" content="BMI Calculator that helps you track your body mass index.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BMI.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>bmiCalculator</title>
+</head>
+<body>
+    <header>
+        <div class="bar-icon">
+            <i class="fas fa-bars" id="bars"></i>
+        </div>
+        <div class="logo">
+           <h1> B <span>M</span> I-<span>Calculator</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#intro">BMI INTRODUCTION</a></li>
+                <li><a href="#table">BMI TABLE</a></li>
+                <li><a href="#risks">RISKS</a></li>
+                <li><a href="#limitations">BMI LIMITATIONS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <div class="calculation">
+           <div class="calculator">
+               <h1>Calculate Your BMI</h1>
+               <div id="infoDiv">
+                   <input type="text" id="weight" placeholder="Enter weight in kg">
+                   <input type="text" id="height" placeholder="Enter height in cm">
+                   <button type="submit" id="calcBtn">Calculate</button>
+                </div>
+            </div>
+            <div class="result">
+                <div class="guage">
+                    <div class="guageMeter">
+                    </div>
+                    <div class="guageValue">
+                    </div>
+                </div>
+                <div class="minMax">
+                    <div class="min">0</div>
+                    <div class="max">40</div>
+                </div>
+            </div>
+   </main>
+<section>
+    <div id="intro">
+    <h1>BMI INTRODUCTION</h1>
+    <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.      
+        
+    </p>
+</div>
+</section>
+<section>
+    <div id="table">
+        <table>
+          <thead>
+            <tr><th colspan="2"><h2>TABLE</h2></th></tr>
+              <tr>
+                  <th><h3>Category</h3></th>
+                  <th><h3>BMI Range</h3></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Underweight</td>
+                  <td>Less than 18.5</td>
+              </tr>
+              <tr>
+                  <td>Normal weight</td>
+                  <td>18.5 to 24.9</td>
+              </tr>
+              <tr>
+                  <td>Overweight</td>
+                  <td>25 to 29.9</td>
+              </tr>
+              <tr>
+                  <td>Obese</td>
+                  <td>30 or greater</td>
+              </tr>
+          </tbody>
+        </table>
+        
+    </div>
+</section>
+<section>
+    <div id="risks">
+        <h1>RISKS</h1>
+        <p>While BMI is a useful tool for determining whether a person is at risk for various diseases and conditions, it does not provide a comprehensive picture of the overall health status of a person. The BMI alone does not indicate whether a person has a genetic predisposition to certain diseases, nor does it provide information about the frequency or severity of specific health conditions. Additionally, BMI does not take into account factors such as smoking, diet, exerciseetc.Being overweight or underweight increases the risk of a number of serious diseases and health conditions. Below is a list of said risks, according to the Centers for Disease Control and Prevention (CDC):</p>
+        <h2>Risks associated with being overweight</h2>
+            <ul>
+                <li><span>* </span>High blood pressure</li>
+                <li><span>* </span>Type II diabetes</li>
+                <li><span>* </span>Coronary heart disease</li>
+                <li><span>* </span>Body pains and difficulty with certain physical functions</li>
+                <li><span>* </span>Mental illnesses such as clinical depression, anxiety, and others</li>
+            </ul>
+        <h2>Risks associated with being underweight</h2>
+        <ul>
+            <li><span>* </span>Malnutrition, vitamin deficiencies, anemia (lowered ability to carry blood vessels)</li>
+            <li><span>* </span>A decrease in immune function</li>
+            <li><span>* </span>Growth and development issues, particularly in children and teenagers</li>
+            <li><span>* </span>Potential complications as a result of surgery</li>
+            <li><span>* </span>Generally, an increased risk of mortality compared to those with a healthy BMI</li>
+        </ul>
+    </div>
+</section>
+<section>
+    <div id="limitations">
+        <h1>BMI LIMITATIONS</h1>
+        <p>Although BMI is a widely used and useful indicator of healthy body weight, it does have its limitations. BMI is only an estimate that cannot take body composition into account. Due to a wide variety of body types as well as distribution of muscle, bone mass, and fat, BMI should be considered along with other measurements rather than being used as the sole method for determining a person's healthy body weight.BMI cannot be fully accurate because it is a measure of excess body weight, rather than excess body fat. BMI is further influenced by factors such as age, sex, ethnicity, muscle mass, body fat, and activity level, among others</p>   
+    </div>
+</section>
+</body>
+<script src="BMI.js"></script>
+</html>

@@ -1,0 +1,226 @@
+:root{
+    --primary-color: #000;
+    --secondary-color: rgb(64, 11, 11);
+    --color-1: beige;
+    --color-2: orange;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-1);
+}
+body{
+    background:var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: var(--color-2);
+    text-align: center;
+    border-bottom: 3px solid var(--color-2);
+}
+header{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bolder;
+    position: sticky;
+    z-index: 11;
+    top:0;
+    padding: 1rem;
+    box-shadow: 0 8px 8px rgba(204, 204, 75, 0.3);
+}
+
+header .bar-icon{
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+}
+
+header h1{
+    border: none;
+}
+.logo span{
+    color: var(--color-1);
+    border: none;
+}
+.navbar{
+    width: 100%;
+    position: absolute;
+    top:110%;
+    left:-100%;
+    background: var(--secondary-color);
+    text-align: center;
+    transition: all 1.5s;
+    z-index: 10;
+}
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+}
+.navbar ul li{
+    display: block;
+    margin: 2vw 0;
+    padding: 2rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+.navbar a{
+    text-decoration: none;
+}
+.calculation{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.result ,.calculator{
+    width: 480px;
+    background :var(--secondary-color);
+    border-radius: 30px;
+    text-align: center;
+    margin: 1rem 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator input[type="text"]{
+    margin: 1rem;
+    height: 2rem;
+    width: 80%;
+    color:var(--primary-color);
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+}
+.calculator ::placeholder{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.calculator button{
+    margin: 1rem 0;
+    height: 2rem;
+    width: 80%;
+    background: var(--color-2);
+    color: var(--color-1);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+}
+.guage{
+    width: 20rem;
+    height:10rem;
+    background: var(--color-1);
+    display: inline-block;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.guageMeter{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    position: relative;
+    top: 100%;
+    transform-origin: center top;
+    transform: rotate(0deg) ;
+    transition: transform 0.2s ease-in-out;
+}
+.guageValue{
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background: var(--primary-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    z-index: 1;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+.minMax{
+    width: 90%;
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+section{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#intro ,#table,#risks ,#limitations{
+    width: 90%;
+    font-size: 1.5rem;
+    background: var(--secondary-color);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p{
+    color: var(--color-1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+#table{
+    background: var(--color-2);
+}
+#table table{
+    text-align: center;
+    padding: 1rem;
+}
+#table th ,td{
+    background:var(--secondary-color);
+}
+ #table table th ,td{
+    padding: .5rem;
+}
+#risks h2{
+    color: var(--color-2);
+}
+#risks ul{
+    list-style: none;
+    text-align: left;
+    padding: 2rem;
+}
+#risks ul li span{
+    color: var(--color-1);
+}
+
+button:hover {
+  background-color: var(--color-1);
+  color: var(--secondary-color);
+  font-weight: bolder;
+}
+
+  input::placeholder {
+    color: orange;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+@media (max-width: 768px) {
+    header{
+        font-size: 1rem;
+    }
+    
+}
+  
